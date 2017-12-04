@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<-- THIS ENTIRE FILE IS UNDER THE GNU AGPLv3+
+<!-- THIS ENTIRE FILE IS UNDER THE GNU AGPLv3+
     https://www.gnu.org/licenses/agpl-3.0.html -->
 
 <link rel="stylesheet" type="text/css" href="../../res/bootstrap.css">
@@ -34,8 +34,32 @@
 
 
 <?php
+
+// check if file-name has any... undesirable characteristics
+
+$file_name = basename($_FILES["fileToUpload"]["name"]);
+
+if (strstr($file_name, " "))
+{
+	$file_name = str_replace(" ", "_", $file_name);
+}
+
+if (strstr($file_name, ".."))
+{
+	$file_name = str_replace("..", "_", $file_name);
+}
+
+if (strstr($file_name, "/"))
+{
+	$file_name = str_replace("/", "_", $file_name);
+}
+
+
+// and now we pretend that never happened
+
 $dest_dir = "p/";
-$dest_file = $dest_dir . basename($_FILES["fileToUpload"]["name"]);
+$dest_file = $dest_dir . $file_name;
+
 $beaming_permitted = 1;
 
 if (file_exists($dest_file))
