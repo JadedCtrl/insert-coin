@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../../res/style.css">
 <link rel="shortcut icon" href="../../res/img/coin.ico">
 
-<title>INSERT COIN</title>
+<title>INSERT URANIUM</title>
 </head>
 
 <body style="font-family: 'ConnectionRegular'; font-weight: normal; font-style: normal;">
@@ -29,24 +29,26 @@
 
 	<a href="../files/">
 	<div class="col-md-4 col-lg-4" id="sectionc">
-		<h1>image-file_upload</h1>
+		<h1>insert-coin</h1>
 	</div>
 	</a>
 </div>
 
 <center style="margin-top: 30px">
-<form action="beam.php" method="post" enctype="multipart/form-data">
-	<p>
-        	<input type="text" placeholder="Filename (Blank for uploaded name)" 
-			name="desired_filename" id="desired_filename" style="width: 400px;">
-	</p>
+<form action="git.php" method="post" enctype="multipart/form-data">
+	<!--	<input type="text" placeholder="Upload from URL" name="fileToDownload" id="fileToDownload" style="width: 400px;"><br/> -->
+	<input type="text" placeholder="Filename (Blank for uploaded name)" name="desired_filename" id="desired_filename" style="width: 400px;"><br/>
+<!--	<p><b>Indexing:</b><br>
+	<input type="radio" name="index" value="0" checked="checked"> <b>god no!</b>
+	<input type="radio" name="index" value="1"> <b>ok, I guess</b></p> -->
+
 	<input type="file" name="fileToUpload" id="fileToUpload">
 	<input style="margin-top: 10px; margin-bottom: 10px" type="submit" value="INSERT COIN" name="submit">
 </form>
 
 <img src="../../res/img/insertcoin_big.png">
-<footer>No data will be recorded on who inserts what coin-- all I'll get is a timestamp.</footer>
-<p>--> <a href="nerd.html">rocket scientist edition</a> <--</p>
+<p>No data will be recorded on who inserts what coin-- all I'll get is a timestamp.</p>
+<p>--> <a href="index.html">normie edition</a> <--</p>
 <p><a href="https://notabug.org/jadedctrl/insert-coin">source juice</a></p>
 </center>
 

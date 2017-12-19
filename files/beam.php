@@ -4,9 +4,10 @@
 <!-- THIS ENTIRE FILE IS UNDER THE GNU AGPLv3+
     https://www.gnu.org/licenses/agpl-3.0.html -->
 
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/connection" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="../../res/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../../res/style.css">
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/connection" type="text/css"/>
+<link rel="shortcut icon" href="../../res/img/coin.ico">
 </head>
 
 <body style="font-family: 'ConnectionRegular'; font-weight: normal; font-style: normal;">
@@ -35,9 +36,17 @@
 
 <?php
 
-// check if file-name has any... undesirable characteristics
+if (empty($_POST["desired_filename"]))
+{
+	$file_name = $_FILES["fileToUpload"]["name"];
+}
+else
+{
+	$file_name = $_POST["desired_filename"];
+}
 
-$file_name = basename($_FILES["fileToUpload"]["name"]);
+
+// check if file-name has any... undesirable characteristics
 
 if (strstr($file_name, " "))
 {
@@ -83,19 +92,22 @@ elseif ($_FILES["fileToUpload"]["size"] < 25000000)
 
 
 if ($beaming_permitted == 0) {
-	echo "<img src=../img/coinfire_big.png>";
+	echo "<img src=../../res/img/coinfire_big.png>";
 	echo "<p>sorry <\\3</p>";
+	echo "<title>COIN ON FIRE</title>";
 }
 else  {
 	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$dest_file)) {
-		echo "<img src=../img/coininserted_big.png>";
+		echo "<img src=../../res/img/coininserted_big.png>";
 		echo "<p>IT IS <a href=" . $dest_file . ">HERE</a></p>";
+		echo "<title>COIN INSERTED <3</title>";
 	}
 	else
 	{
-		echo "<img src=../img/coinfire_big.png>";
+		echo "<img src=../../res/img/coinfire_big.png>";
 		echo "<p>...</p>";
 		echo "<p>THAT WAS WEIRD, SOMETHING WENT WRONG. TRY AGAIN.</p>";
+		echo "<title>COIN ON FIRE</title>";
 	}
 }
 
