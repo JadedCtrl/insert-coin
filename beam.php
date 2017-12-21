@@ -1,40 +1,7 @@
-<html>
-<head>
-
-<!-- THIS ENTIRE FILE IS UNDER THE GNU AGPLv3+
-    https://www.gnu.org/licenses/agpl-3.0.html -->
-
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/connection" type="text/css"/>
-<link rel="stylesheet" type="text/css" href="../../res/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../../res/style.css">
-<link rel="shortcut icon" href="../../res/img/coin.ico">
-</head>
-
-<body style="font-family: 'ConnectionRegular'; font-weight: normal; font-style: normal;">
-<div class="row text-center">
-	<a href="../mazes/">
-	<div class="col-md-4 col-lg-4" id="sectiona">
-		<h1>ihatemazes</h1>
-	</div>
-	</a>
-
-	<a href="../naia/">
-	<div class="col-md-4 col-lg-4" id="sectionb">
-		<h1>naia</h1>
-	</div>
-	</a>
-
-	<a href="../files/">
-	<div class="col-md-4 col-lg-4" id="sectionc">
-		<h1>image-file_upload</h1>
-	</div>
-	</a>
-</div>
-
-<center style="margin-top: 30px">
-
-
 <?php
+
+include("header.html");
+echo "<center>";
 
 if (empty($_POST["desired_filename"]))
 {
@@ -111,8 +78,6 @@ else  {
 	}
 }
 
-?>
+include("footer.html");
 
-</center>
-</body>
-</html>
+?>
