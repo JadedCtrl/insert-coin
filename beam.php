@@ -1,7 +1,7 @@
 <?php
 
 include("header.html");
-echo "<center>";
+echo "<main class=\"text-center\">";
 
 if (empty($_POST["desired_filename"]))
 {
@@ -40,44 +40,48 @@ $beaming_permitted = 1;
 
 if (file_exists($dest_file))
 {
-	echo "<p>WE'RE GETTING SOME INTERFERENCE</p>";
-	echo "<p>PLEASE USE A DIFFERENT COIN-NAME</p>";
+	echo "<p class=\"uppercase\">We're getting some interference</p>";
+	echo "<p class=\"uppercase\">Please use a different coin-name</p>";
 	$beaming_permitted = 0;	
 }
 elseif ($_FILES["fileToUpload"]["size"] > 50000000)
 {
-	echo "<p>THIS COIN WILL BE UP FOR AT LEAST THREE MONTHS</p>";
-	echo "<p>7 MOONS IN THE ORDINARY SABBATICAL CYCLE</p>";
-	echo "<p>AFTER THAT, IT *MAY* BE DE-ATOMIZED</p>>";
+	echo "<p class=\"uppercase\">This coin will be up for at least three months</p>";
+	echo "<p class=\"uppercase\">7 moons in the ordinary sabbatical cycle</p>";
+	echo "<p class=\"uppercase\">After that, it *may* be de-atomized</p>";
 }
 elseif ($_FILES["fileToUpload"]["size"] < 25000000)
 {
-	echo "<p>THANK YOU FOR FEEDING ME</p>";
-	echo "<p>YOUR COIN IS IN SAFE HANDS</p>";
-	echo "<p>IT WILL NOT BE DE-ATOMIZED FOR AT LEAST A YEAR</p>";
+	echo "<p class=\"uppercase\">Thank you for feeding me</p>";
+	echo "<p class=\"uppercase\">Your coin is in safe hands</p>";
+	echo "<p class=\"uppercase\">It will not be de-atomized for at least a year</p>";
 }
 
 
 if ($beaming_permitted == 0) {
-	echo "<img src=../../res/img/coinfire_big.png>";
-	echo "<p>sorry <\\3</p>";
 	echo "<title>COIN ON FIRE</title>";
+	echo "<img alt=\"A big coin in bloody flames.\" src=../../res/img/coinfire_big.png>";
+	echo "<p>sorry <\\3</p>";
 }
 else  {
 	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$dest_file)) {
-		echo "<img src=../../res/img/coininserted_big.png>";
-		echo "<p>IT IS <a href=" . $dest_file . ">HERE</a></p>";
 		echo "<title>COIN INSERTED <3</title>";
+		echo "<img alt=\"A coin lovingly inserted to a coin-slot\" src=../../res/img/coininserted_big.png>";
+		echo "<p class=\"uppercase\">It is <a href=" . $dest_file . ">here</a></p>";
 	}
 	else
 	{
-		echo "<img src=../../res/img/coinfire_big.png>";
-		echo "<p>...</p>";
-		echo "<p>THAT WAS WEIRD, SOMETHING WENT WRONG. TRY AGAIN.</p>";
 		echo "<title>COIN ON FIRE</title>";
+		echo "<img alt=\"Ouch, that coin is on fire. Literally.\" src=../../res/img/coinfire_big.png>";
+		echo "<p>...</p>";
+		echo "<p class=\"uppercase\">That was weird, something went wrong. Try again.</p>";
 	}
 }
 
-include("footer.html");
+?>
 
+</main>
+
+<?php
+include("footer.html");
 ?>
