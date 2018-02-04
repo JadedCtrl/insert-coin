@@ -1,7 +1,7 @@
 <?php include("header.html");?>
 
 <main class="text-center" style="margin-top: 30px">
-<form action="beamgit.php" method="post" enctype="multipart/form-data">
+<form action="beam.php" method="post" enctype="multipart/form-data">
 	<p>
         	<input type="text" placeholder="Filename (Blank for uploaded name)" 
 			name="desired_filename" id="desired_filename" style="width: 400px;">
