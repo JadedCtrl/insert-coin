@@ -21,7 +21,7 @@ function celebrate($dest_file)
 	<p class="uppercase"><a href="<?php echo($dest_file); ?>">
 		https://coinsh.red/<?php echo($dest_file); ?></a></p>
 	<p class="uppercase">It's meta-stuff (or lack thereof) is 
-		<a href="<?php echo($dest_file); ?>.txt\">here</a></p>
+		<a href="<?php echo($dest_file); ?>.txt">here</a></p>
 <?php
 }
 
@@ -39,6 +39,19 @@ function celebrate_death($dest_file, $upload_method)
 <?php
 }
 	
+function check_name_length($file_name)
+{
+	if (strlen($file_name) > 36)
+	{
+		?>
+	<p> just a friendly note:</p>
+	<p>it looks like your filename is total gibberish or really long.</p>
+	<p>it could probably be a bit prettier--<p>
+	<p> remember, you can use the filename box when uploading to set a custom filename.</p>
+		<?php
+	}
+}
+
 
 
 if (!empty($_POST["upload_url"]))
@@ -97,6 +110,7 @@ else
 		{
 			write_metadata($dest_file, $_POST["file_desc"], $_POST["file_source"]);
 			celebrate($dest_file);
+			check_name_length($file_name);
 		}
 		else
 		{
@@ -110,6 +124,7 @@ else
 		{
 			write_metadata($dest_file, $_POST["file_desc"], $upload_url . "\n\t" . $_POST["file_source"]);
 			celebrate($dest_file);
+			check_name_length($file_name);
 		}
 		else
 		{
