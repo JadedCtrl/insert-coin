@@ -1,5 +1,5 @@
-[Work Title]
-Copyright [Author] [Year]
+insert-coin
+Copyright Jaidyn Lev, 2018
 
 COOPERATIVE SOFTWARE LICENSE
 
