@@ -203,24 +203,29 @@ AND CONDITIONS OF THIS LICENSE.
           c. If the Work meets the definition of Software, You may exercise
           the rights granted in Section 3 only if You provide a copy of the
           corresponding Source Code from which the Work was derived in digital
-          form; or You provide a URI for the corresponding Source Code of
-          the Work to any recipients upon request.
+          form, or You provide a URI for the corresponding Source Code of
+          the Work, to any recipients upon request.
 
           d. If the Work is used as or for a Web Service, You may exercise
           the rights granted in Section 3 only if You provide a copy of the
           corresponding Source Code from which the Work was derived in digital
-          form-- or You provide a URI for the corresponding Source Code to
-          the Work-- to any recipients of the data served or modified by the
-          Web Service.
+          form, or You provide a URI for the corresponding Source Code to the
+          Work, to any recipients of the data served or modified by the Web
+          Service.
 
           e. You may exercise the rights granted in Section 3 for
-          commercial purposes only if:
+          commercial purposes only if you statisy any of the following:
 
                 i. You are a worker-owned business or worker-owned
                 collective; and
-                ii. all financial gain, surplus, profits and benefits
-                produced by the business or collective are distributed
-                among the worker-owners
+                ii.  after tax, all financial gain, surplus, profits and 
+                benefits produced by the business or collective are
+                distributed among the worker-owners
+		iii. You are not using such rights on behalf of a business
+		other than those specified in 4(e.i) and elaborated upon in
+                4(e.ii), nor are using such rights as a proxy on behalf of a
+                business with the intent to circumvent the aformentioned
+                restrictions on such a business.
 
           f. Any use by a business that is privately owned and managed,
           and that seeks to generate profit from the labor of employees
