@@ -11,12 +11,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>coinsh.red: Insert Coin</title>
+<title><?php echo($site_name . ": " . $page_title); ?></title>
 </head>
 
 <body>
 <div class="menu top-menu">
-	<h2>coinsh.red</h2>
+	<h2><a href="."><?php echo($site_name); ?></a></h2>
 	<ul>
 		<li><a href="index.php">file-beamer</a></li>
 		<li><a href="url.php">url-shortener</a></li>

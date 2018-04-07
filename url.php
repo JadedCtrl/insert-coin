@@ -1,4 +1,10 @@
-<?php include("header.html");?>
+<?php
+$page_title = "Create Mask";
+
+include("res/config.php");
+include("res/header.php");
+?>
+
 
 <main>
 
@@ -13,11 +19,13 @@
 			name="url_alias" class="basic-text">
 	</p>
 
-	<input style="margin-top: 10px; margin-bottom: 10px" type="submit" value="INSERT COIN" name="submit">
+	<input style="margin-top: 10px; margin-bottom: 10px" type="submit"
+		value="FORGE <?php echo(strtoupper($url_aliasize_item)); ?>" name="submit">
 </form>
 
-<img alt="Picture of a pretty big, yellow labour-token." src="res/img/insertcoin_big.png">
+<img alt="<?php echo($url_aliasize_alt); ?>" src="<?php echo($url_aliasize_img); ?>">
+
 
 </main>
 
-<?php include("footer.html");?>
+<?php include("res/footer.html");?>

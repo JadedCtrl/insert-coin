@@ -1,4 +1,10 @@
-<?php include("header.html");?>
+<?php
+include("res/config.php");
+
+$page_title = "Insert " . ucfirst($file_beam_item);
+
+include("res/header.php");
+?>
 
 <main>
 
@@ -13,17 +19,13 @@
 			name="file_source" class="basic-text">
 	</p>
 
-<!--	<p>
-        	<input type="text" placeholder="Upload from URL" 
-			name="upload_url" id="upload_url" style="width: 400px;">
-	</p> -->
-
 	<input type="file" name="fileToUpload" id="fileToUpload" style="margin: 0 auto">
-	<input style="margin-top: 10px; margin-bottom: 10px" type="submit" value="INSERT COIN" name="submit">
+	<input style="margin-top: 10px; margin-bottom: 10px" type="submit"
+		value="INSERT <?php echo(strtoupper($file_beam_item)); ?>" name="submit">
 </form>
 
-<img alt="Picture of a pretty big, yellow labour-token." src="res/img/insertcoin_big.png">
+<img alt="<?php echo($file_beam_alt); ?>" src="<?php echo($file_beam_img); ?>">
 
 </main>
 
-<?php include("footer.html");?>
+<?php include("res/footer.html");?>
