@@ -13,6 +13,11 @@
 			name="file_source" class="basic-text">
 	</p>
 
+<!--	<p>
+        	<input type="text" placeholder="Upload from URL" 
+			name="upload_url" id="upload_url" style="width: 400px;">
+	</p> -->
+
 	<input type="file" name="fileToUpload" id="fileToUpload" style="margin: 0 auto">
 	<input style="margin-top: 10px; margin-bottom: 10px" type="submit" value="INSERT COIN" name="submit">
 </form>
