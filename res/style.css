@@ -1,23 +1,73 @@
-// AGPLv3+
-body {
-	background-color: #ffded6;
+body
+{
+	background-color: #FAE3E3;
+
+	font-family: 'ConnectionRegular';
+	font-weight: normal;
+	font-style: normal;
+
+	text-align: center;
 }
 
-#sectiona {
-	background-color: #FF5C33;
-	color: #FF5C33;
+footer
+{
+	background-color: #F7D4BC;
+
+	padding-top: 5px;
 }
 
-#sectionb {
-	background-color: #33D6FF;
-	color: #33D6FF;
+img
+{
+	width: 280px;
 }
 
-#sectionc {
-	background-color: #33FF5C;
-	color: #33FF5C;
+main
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-.uppercase {
-	text-transform: uppercase;
+
+
+
+
+.basic-text
+{
+	width: 300px;
+}
+
+
+
+.menu
+{
+	background-color: #C98BB9;
+
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.menu h1, .menu h2, .menu h3
+{
+	background-color: #CFA5B4;
+
+}
+
+.menu ul
+{
+	overflow:hidden
+
+}
+
+.menu li
+{
+	width: 25%;
+	display: block;
+	float: left;
+}
+
+
+.top-menu li
+{
+	font-size: 20px;
+	width: 50%;
 }
