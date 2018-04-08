@@ -11,8 +11,15 @@ echo("\n<main>\n");
 if (!empty($_POST["desired_filename"]))
 {
 	$file_name = $_POST["desired_filename"];
-	$file_name = sanitize_filename($file_name);
-	$dest_file = $file_beam_dir . $file_name;
+
+	if (!pathinfo($file_name, PATHINFO_EXTENSION))
+	{
+		$file_name = $file_name . "." .
+			(pathinfo($_FILES["fileToUpload"]["name"],
+				PATHINFO_EXTENSION));
+	}
+
+	echo($file_name);
 
 	$beaming_permitted = 0;
 }
@@ -28,6 +35,9 @@ else
 {
 	$beaming_permitted = 1;
 }
+
+$file_name = sanitize_filename($file_name);
+$dest_file = $file_beam_dir . $file_name;
 
 if (file_exists($dest_file))
 {

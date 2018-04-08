@@ -1,4 +1,4 @@
-[!insert-coin](https://coinsh.red/p/logo.png)
+![insert-coin](https://coinsh.red/p/logo-big.png)
 
 insert-coin's a lightweight & simple image-uploading/URL-shortening service.
 
