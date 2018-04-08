@@ -19,9 +19,9 @@ $url_aliasize_die_alt = "A whimsical mask on fire.";
 
 $url_aliasize_item = "mask";		// what the alias is affectionately called
 $url_aliasize_dir = "u/";		// where the redirects go
-$url_aliasize_suffix = ".php";		// suffix to redirect links; some web-servers
-					// only execute ".php" files, so you might
-					// wanna keep ".php" as the suffix
+$url_aliasize_suffix = "";		// suffix to redirect links; some web-servers
+					// only execute ".php" files, so if things
+					// don't work, set as ".php"
 
 
 // vars related to file uploading

@@ -106,6 +106,18 @@ function get_cwd($url)
 	}
 }
 
+function sanitize_jpg($path)
+{
+	$image = new Imagick($path);
+	
+	$profiles = $image->getImageProfiles("icc", true);
+
+	$image->Imagick::stripImage();
+
+if(!empty($profiles))
+    $image->profileImage("icc", $profiles['icc']);
+}
+
 
 function celebrate($dest_file, $item_type, $image_url, $image_alt, $meta_data = false)
 {
