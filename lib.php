@@ -96,7 +96,7 @@ function get_cwd($url)
 	{
 		$parts = count($url_array);
 
-		$url = implode(array_splice($url_array, 1, $parts - 2));
+		$url = $_SERVER["HTTP_HOST"] . implode(array_splice($url_array, 1, $parts - 2));
 
 		return $url;
 	}
@@ -106,16 +106,9 @@ function get_cwd($url)
 	}
 }
 
-function sanitize_jpg($path)
+function sanitize_image($path)
 {
-	$image = new Imagick($path);
-	
-	$profiles = $image->getImageProfiles("icc", true);
-
-	$image->Imagick::stripImage();
-
-if(!empty($profiles))
-    $image->profileImage("icc", $profiles['icc']);
+	exec("mogrify -strip " . $path, $result);
 }
 
 

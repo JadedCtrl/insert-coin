@@ -60,7 +60,13 @@ switch ($beaming_permitted)
 	case 0:
 		if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$dest_file))
 		{
+//			$file_ext = pathinfo($dest_file, PATHINFO_EXTENSION);
+//			if ($file_ext == "jpg")
+//			{
+//				sanitize_image($dest_file);
+//			}
 			write_metadata($dest_file, $_POST["file_source"]);
+
 			celebrate($dest_file, $file_beam_item,
 				$file_beam_win_img, $file_beam_win_alt, true);
 		}
