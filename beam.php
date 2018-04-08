@@ -19,8 +19,6 @@ if (!empty($_POST["desired_filename"]))
 				PATHINFO_EXTENSION));
 	}
 
-	echo($file_name);
-
 	$beaming_permitted = 0;
 }
 else if (!empty($_FILES["fileToUpload"]["name"]))

@@ -88,6 +88,25 @@ function url_to_filename($url)
 	return $filename;
 }
 
+function get_cwd($url)
+{
+	$url_array = (explode("/", $url));
+	
+	if (end($url_array))
+	{
+		$parts = count($url_array);
+
+		$url = implode(array_splice($url_array, 1, $parts - 2));
+
+		return $url;
+	}
+	else 
+	{
+		return $url;
+	}
+}
+
+
 function celebrate($dest_file, $item_type, $image_url, $image_alt, $meta_data = false)
 {
 
@@ -100,6 +119,7 @@ function celebrate($dest_file, $item_type, $image_url, $image_alt, $meta_data = 
 
 	<p>Your <?php echo($item_type); ?>'s
 		<a href="<?php echo ($dest_file); ?>">over here</a></p>
+	<p><b><?php echo("https://" . get_cwd($_SERVER["REQUEST_URI"]) . "/" . $dest_file); ?></b></p>
 <?php
 	if ($meta_data)
 	{
