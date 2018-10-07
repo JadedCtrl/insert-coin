@@ -2,7 +2,7 @@
 $page_title = "The Beaming";
 
 include("../resources/config.php");
-include("../resources/library/insert-coin.php");
+include("../resources/library/main.php");
 
 include("../resources/templates/header.php");
 echo("\n<main>\n");
