@@ -14,6 +14,7 @@ if (!empty($_POST["url_target"]) && !empty($_POST["url_alias"]))
 	$url_alias = $_POST["url_alias"];
 	$url_alias = sanitize_filename($url_alias);
 
+	$visible_dest = $url_aliasize_dir . $url_alias . $url_aliasize_visible_suffix;
 	$dest_file = $url_aliasize_dir . $url_alias . $url_aliasize_suffix;
 
 	$beaming_permitted = 0;
@@ -55,7 +56,7 @@ switch ($beaming_permitted)
 		break;
 	case 0:
 		write_alias($dest_file, $url_target);
-		celebrate($dest_file, $url_aliasize_item,
+		celebrate($visible_dest, $url_aliasize_item,
 			$url_aliasize_win_img, $url_aliasize_win_alt);
 		break;
 }
