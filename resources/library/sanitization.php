@@ -1,6 +1,5 @@
 <?php
 
-include("../config.php");
 
 // FILENAME --> SAFE_FILENAME_STRING
 //	Sanitize a filename by replacing common suspicious characters with "_".

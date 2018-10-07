@@ -1,6 +1,5 @@
 <?php
 
-include("../config.php");
 
 // FILEPATH URL --> RELATIVE_PATH
 // SIDE-EFFECT: Written redirect PHP to filepath

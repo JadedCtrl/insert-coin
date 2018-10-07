@@ -1,6 +1,5 @@
 <?php
 
-include("../config.php");
 
 function celebrate($dest_file, $item_type, $image_url, $image_alt, $meta_data = false)
 {

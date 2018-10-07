@@ -1,6 +1,5 @@
 <?php
 
-include("../config.php");
 
 include("array.php");
 include("file.php");
