@@ -37,3 +37,6 @@ $file_beam_die_alt = "A coin on fire.";
 
 $file_beam_item = "coin";	// what the file is affectionately called
 $file_beam_dir = "p/";		// where the files go
+
+$image_sanitize_command = "mogrify";
+$image_sanitize_args = "strip";
