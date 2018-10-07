@@ -6,7 +6,7 @@
      https://www.gnu.org/licenses/agpl-3.0.html -->
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/connection" type="text/css"/>
-<link rel="stylesheet" type="text/css" href="res/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="shortcut icon" href="res/img/coin.ico">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

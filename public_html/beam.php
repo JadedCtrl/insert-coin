@@ -1,10 +1,10 @@
 <?php 
 $page_title = "The Beaming";
 
-include("res/config.php");
-include("lib.php");
+include("../resources/config.php");
+include("../resources/library/insert-coin.php");
 
-include("res/header.php");
+include("../resources/templates/header.php");
 echo("\n<main>\n");
 
 
@@ -85,5 +85,5 @@ switch ($beaming_permitted)
 </main>
 
 <?php
-include("res/footer.html");
+include("../resources/templates/footer.html");
 ?>

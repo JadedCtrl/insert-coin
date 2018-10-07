@@ -1,9 +1,9 @@
 <?php
-include("res/config.php");
+include("../resources/config.php");
 
 $page_title = "Insert " . ucfirst($file_beam_item);
 
-include("res/header.php");
+include("../resources/templates/header.php");
 ?>
 
 <main>
@@ -28,4 +28,4 @@ include("res/header.php");
 
 </main>
 
-<?php include("res/footer.html");?>
+<?php include("../resources/templates/footer.html");?>

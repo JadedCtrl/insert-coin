@@ -1,8 +1,8 @@
 <?php
 $page_title = "Create Mask";
 
-include("res/config.php");
-include("res/header.php");
+include("../resources/config.php");
+include("../resources/templates/header.php");
 ?>
 
 
@@ -28,4 +28,4 @@ include("res/header.php");
 
 </main>
 
-<?php include("res/footer.html");?>
+<?php include("../resources/templates/footer.html");?>

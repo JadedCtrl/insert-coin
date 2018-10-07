@@ -15,10 +15,5 @@ url.php, conjure.php, and anything in the u/ directory that you'll create.
 
 Licensing
 ------
-Everything (unless mentioned otherwise) is under the Cooperative Software License,
-as seen at https://coinsh.red/csl/csl.txt, or in LICENSE.txt.
-
-TL;DR: You can share, modify, and sell insert-coin at your whim-- as long as
-you do so with corresponding source-code and aren't a bourgie.
-If you run a modified insert-coin on your web-server, make sure to offer your
-users the source-code! :)
+Everything (unless mentioned otherwise) is under the GNU AGPLv3
+as seen at https://gnu.ord, or in COPYING.txt.
