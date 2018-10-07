@@ -30,8 +30,8 @@ function write_metadata($filepath, $source)
 
 	$file_p = fopen($filepath . ".txt", 'w');
 	$source_string = "Source:\n"
-		. prefix_text(set_line_length($source, 60),
-				"                    ");
+		. prefix_text(set_line_length($source, 50),
+				"          ");
 
 	fwrite($file_p, $source_string);
 	fclose($file_p);
