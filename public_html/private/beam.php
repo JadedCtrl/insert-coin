@@ -7,7 +7,7 @@ $file_ext = file_extension($file_name);
 if (!empty($_POST["desired_filename"])) {
 	$file_name = $_POST["desired_filename"];
 	if (!file_extension($file_name)) {
-		$file_name = $file_name . $file_ext;
+		$file_name = $file_name . "." . $file_ext;
 	}
 }
 $file_name = sanitize_filename($file_name);
