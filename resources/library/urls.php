@@ -27,4 +27,49 @@ function get_cwd($url)
 	}
 }
 
+
+
+// --> PROTOCOL://
+//	Return "http://" or "https://", depending on what's currently used.
+function protocol()
+{
+        if (isset($_SERVER['HTTPS'])) {
+                return "https://";
+        } else {
+                return "http://";
+        }
+}
+
+
+
+// ABSOLUTE_PATH --> FULL_URL
+//	Create a full URL with the current protocol, domain, and provided path.
+function make_url($path)
+{
+        $url = protocol()
+                . $_SERVER['HTTP_HOST']
+                . "/"
+                . $path;
+
+        return $url;
+}
+
+
+
+// URL --> HEADER_REDIRECTION
+//	Create a redirection header.
+function redirect($url)
+{
+	return header('Location: ' . $url);
+}
+
+
+
+// URL --> BOOLEAN
+// 	Return whether or not a URL is a valid one.
+function valid_url($url)
+{
+	return filter_var($url_target, FILTER_VALIDATE_URL);
+}
+
 ?>

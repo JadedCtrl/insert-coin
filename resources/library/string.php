@@ -92,4 +92,29 @@ function is_punctuation($character)
 }
 
 
+
+// STRING --> FIRST_CHARACTER
+//	Return the first character of a string.
+function strcar($string)
+{
+	return substr($string, 0, 1);
+}
+
+
+
+// STRING --> ALL_BUT_FIRST_CHARACTER
+//	Return all but the first character of a string.
+function strcdr($string)
+{
+	return substr($string, 1);
+}
+
+
+
+// STRING --> SECOND_CHARACTER
+//	Return the second character of a string.
+function strcadr($string)
+{
+	return strcar(strcdr($string));
+}
 ?>

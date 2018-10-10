@@ -8,11 +8,15 @@
 function write_alias($filepath, $url)
 {
 	$file_p = fopen($filepath, 'w');
-		
-	fwrite($file_p, "<?php header('Location: " . $url . "'); ?>\n");
-	fclose($file_p);
+	$redirect_string = "<?php header('Location: " . $url . "'); ?>\n";
 
-	return $filepath;
+	if (fwrite($file_p, $redirect_string)) {
+		fclose($file_p);
+		return $filepath;
+	}
+	else {
+		return 0;
+	}
 }
 
 
@@ -32,8 +36,22 @@ function write_metadata($filepath, $source)
 		. prefix_text(set_line_length($source, 50),
 				"          ");
 
-	fwrite($file_p, $source_string);
-	fclose($file_p);
+	if (fwrite($file_p, $source_string)) {
+		fclose($file_p);
+		return $source_string;
+	}
+	else {
+		return 0;
+	}
+}
+
+
+
+// FILENAME --> FILE_EXTENSION
+//	Return the file-extension of a filename.
+function file_extension($file_name)
+{
+	return pathinfo($file_name, PATHINFO_EXTENSION);
 }
 
 
