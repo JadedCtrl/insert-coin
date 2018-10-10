@@ -69,7 +69,7 @@ function redirect($url)
 // 	Return whether or not a URL is a valid one.
 function valid_url($url)
 {
-	return filter_var($url_target, FILTER_VALIDATE_URL);
+	return filter_var($url, FILTER_VALIDATE_URL);
 }
 
 ?>
