@@ -2,9 +2,11 @@ body
 {
 	background-color: #FAE3E3;
 
-	font-family: 'ConnectionRegular';
+	margin: 0 0 0 0;
+
+//	font-family: 'ConnectionRegular';
 	font-weight: normal;
-	font-style: normal;
+	font-style: sans;
 
 	text-align: center;
 }
@@ -48,11 +50,13 @@ main
 	background-color: #C98BB9;
 
 	width: 100%;
+	margin: 0;
 	padding-bottom: 5px;
 }
 
 .menu h1, .menu h2, .menu h3
 {
+	margin: 0;
 	background-color: #CFA5B4;
 }
 
@@ -68,7 +72,6 @@ main
 	display: block;
 	float: left;
 }
-
 
 .top-menu li
 {

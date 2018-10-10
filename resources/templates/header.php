@@ -5,10 +5,13 @@
 <!-- THIS ENTIRE FILE IS UNDER THE AGPLv3+
      https://www.gnu.org/licenses/agpl-3.0.html -->
 
+<!-- FANCY FONTS:
 <link rel="stylesheet" media="screen"
 	href="https://fontlibrary.org/face/connection" type="text/css"/>
+-->
+
 <link rel="stylesheet" type="text/css" href="/res/css/style.css">
-<link rel="shortcut icon" href="/res/img/coin.ico">
+<link rel="shortcut icon" href="/res/img/coin.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
