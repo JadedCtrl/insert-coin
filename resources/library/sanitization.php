@@ -6,8 +6,11 @@
 function sanitize_filename($filename)
 {
 	$death_characters = array(" ", ",", "/", "\\", "%", "$", "^");
+	$death_filetypes = array(".php", ".sh", ".lisp", ".cl", ".cgi", ".pl");
 
 	$sanitized_filename = str_replace($death_characters, "_", $filename);
+	$sanitized_filename = str_replace($death_filetypes, ".inv",
+						$sanitized_filename);
 
 	return $sanitized_filename;
 }
