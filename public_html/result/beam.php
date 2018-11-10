@@ -4,8 +4,8 @@ include("../../resources/library/main.php");
 
 $item = strtolower($GLOBALS["file_beam_item"]);
 
-$filename = $_GET["success"];
-$error = $_GET["error"];
+$filename = sanitize_filename($_GET["success"]);
+$error = sanitize_filename($_GET["error"]);
 
 
 
