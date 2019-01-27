@@ -78,3 +78,10 @@ main
 	font-size: 20px;
 	width: 50%;
 }
+
+#duck
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 25px;
+}

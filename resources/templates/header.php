@@ -5,7 +5,6 @@
 <!-- THIS ENTIRE FILE IS UNDER THE AGPLv3+
      https://www.gnu.org/licenses/agpl-3.0.html -->
 
-FANCY FONTS:
 <link rel="stylesheet" media="screen"
 	href="https://fontlibrary.org/face/connection" type="text/css"/>
 
