@@ -21,12 +21,19 @@ switch (true) {
 	case (empty($file_name) || empty($dest_name)):
 		redirect(make_url("result/beam.php?error=1"));
 		break;
+
 	case (file_exists($dest_file)):
 		redirect(make_url("result/beam.php?error=2"));
 		break;
 
+
 	case (move_uploaded_file($_FILES["uploadcoin"]["tmp_name"], $dest_file)
 	&& write_metadata($dest_file, $_POST["file_source"])):
+
+		if (in_array(file_extension($dest_file)),array("jpg","jpeg")) {
+			sanitize_image($dest_file);
+		}
+
 		redirect(make_url("result/beam.php?success="
 				. $file_name));
 		break;
