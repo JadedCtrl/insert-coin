@@ -1,6 +1,5 @@
 <?php
 
-
 // FILENAME --> SAFE_FILENAME_STRING
 //	Sanitize a filename by replacing common suspicious characters with "_".
 function sanitize_filename($filename)
@@ -22,7 +21,9 @@ function sanitize_filename($filename)
 //	Sanitize an image (EXIF, etc) with external program from config.php
 function sanitize_image($path)
 {
-	exec($image_sanitize_command . $image_sanitize_args . $path, $result);
+	exec($GLOBALS['image_sanitize_command'] . ' '
+		. $GLOBALS['image_sanitize_args'] . ' '
+		. $path, $result);
 
 	return $path;
 }
