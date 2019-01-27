@@ -30,7 +30,7 @@ switch (true) {
 	case (move_uploaded_file($_FILES["uploadcoin"]["tmp_name"], $dest_file)
 	&& write_metadata($dest_file, $_POST["file_source"])):
 
-		if (in_array(file_extension($dest_file),array("jpg","jpeg"))) {
+		if (is_image($dest_file)) {
 			sanitize_image($dest_file);
 		}
 

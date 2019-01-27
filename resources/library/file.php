@@ -54,5 +54,18 @@ function file_extension($file_name)
 	return strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 }
 
+// FILENAME --> BOOLEAN
+//	Return whether or not a filename has an 'image' file-extension
+function is_image($file_name)
+{
+	$file_ext = file_extension($file_name);
+
+	if (in_array(($file_ext), array("jpg", "jpeg", "jpg", "png"))) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
 
 ?>

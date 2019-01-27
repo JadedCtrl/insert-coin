@@ -41,7 +41,7 @@ $file_beam_dir = "p/";		// where the files go
 
 
 // for sanitization of images (stripping EXIF, etc) with an external program.
-$image_sanitize_command = "jhead";
-$image_sanitize_args = "-purejpg";
+$image_sanitize_command = "mogrify";
+$image_sanitize_args = "-strip";
 
 ?>
