@@ -51,7 +51,7 @@ function write_metadata($filepath, $source)
 //	Return the file-extension of a filename.
 function file_extension($file_name)
 {
-	return pathinfo($file_name, PATHINFO_EXTENSION);
+	return strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 }
 
 
