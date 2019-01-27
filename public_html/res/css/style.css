@@ -4,9 +4,9 @@ body
 
 	margin: 0 0 0 0;
 
-//	font-family: 'ConnectionRegular';
-	font-weight: normal;
 	font-style: sans;
+	font-family: 'ConnectionRegular';
+	font-weight: normal;
 
 	text-align: center;
 }
