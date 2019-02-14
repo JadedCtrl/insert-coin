@@ -1,0 +1,14 @@
+Since Lighttpd doesn't support .htaccess files, you'll need to manually
+restrict access to some files.
+You can use "mod_redirect" like so:
+
+	url.redirect = (
+		"^/README.txt$"  => "https://HOSTNAME/",
+		"^/COPYING.txt$"  => "https://HOSTNAME/",
+		"^/res/config.*$"  => "https://HOSTNAME/",
+		"^/res/library.*$"  => "https://HOSTNAME/",
+		"^/res/templates.*$"  => "https://HOSTNAME/"
+	)
+
+... just make sure to change HOSTNAME to your actual hostname, and to change
+"^/" to whatever the root to your insert-coin instance is.

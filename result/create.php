@@ -1,6 +1,6 @@
 <?php
-include("../../resources/config.php");
-include("../../resources/library/main.php");
+include("../res/config.php");
+include("../res/library/main.php");
 
 $item = strtolower($GLOBALS["url_aliasize_item"]);
 

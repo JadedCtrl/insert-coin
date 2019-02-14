@@ -18,11 +18,11 @@ function root($path)
 	return $absolute_path;
 }
 
-include(root("resources/library/array.php"));
-include(root("resources/library/file.php"));
-include(root("resources/library/insert-coin.php"));
-include(root("resources/library/sanitization.php"));
-include(root("resources/library/string.php"));
-include(root("resources/library/urls.php"));
+include(root("res/library/array.php"));
+include(root("res/library/file.php"));
+include(root("res/library/insert-coin.php"));
+include(root("res/library/sanitization.php"));
+include(root("res/library/string.php"));
+include(root("res/library/urls.php"));
 
 ?>

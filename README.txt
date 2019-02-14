@@ -16,7 +16,12 @@ matter).
 Then, create two directories-- "p/" and "u/"-- that are accessible and
 modifiable by your web-server user.
 Finally, make a "res/config.php" file (from "res/config.example.php").
-Then, profit!
+
+If you're using a web-server that supports .htaccess files (Apache and the
+ilk), then you should be good from here. Otherwise, you should manually block
+the files referenced in "/.htaccess" and "res/.htaccess"-- for sample config
+of Lighttpd, read "docs/lighttpd.txt".
+
 
 
 ----------------------------------------

@@ -1,7 +1,7 @@
 <?php 
 
-include("../../resources/config.php");
-include("../../resources/library/main.php");
+include("../res/config.php");
+include("../res/library/main.php");
 
 
 $url_target = $_POST["url_target"];

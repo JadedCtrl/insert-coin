@@ -1,6 +1,6 @@
 <?php 
-include("../../resources/config.php");
-include("../../resources/library/main.php");
+include("../res/config.php");
+include("../res/library/main.php");
 
 $file_name = $_FILES["uploadcoin"]["name"];
 $file_ext = file_extension($file_name);
