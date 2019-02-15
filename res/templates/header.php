@@ -9,8 +9,8 @@
 	href="https://fontlibrary.org/face/connection" type="text/css"/>
 
 <link rel="stylesheet" type="text/css"
-	href="<?php echo root("res/css/style.css") ?>">
-<link rel="shortcut icon" href="<?php echo root("res/img/coin.png") ?>">
+	href="<?php echo webroot("res/css/style.css") ?>">
+<link rel="shortcut icon" href="<?php echo webroot("res/img/coin.png") ?>">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

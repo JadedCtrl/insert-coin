@@ -10,7 +10,7 @@
 			<li><a href="https://libregamenight.xyz">lgn</a></li>
 			<li><a href="https://fsf.org">fsf</a></li>
 			<li><a href="https://eunichx.us">eunichx</a></li>
-			<li><a href="http://coinsh.red/rse/img/war_duck.png">
+			<li><a href="http://4wxnumwn5zljjkyi.onion/">
 				onion</a></li>
 			<li><b><a href="https://git.eunichx.us/insert-coin.git">
 				source-code</a></b></li>

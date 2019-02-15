@@ -1,4 +1,5 @@
-<form action="private/beam.php" method="post" enctype="multipart/form-data">
+<form action="<?php echo webroot("private/beam.php")?>"
+		method="post" enctype="multipart/form-data">
 	<p>
         	<input type="text" placeholder="Filename (Blank for uploaded name)" 
 			name="desired_filename" class="basic-text">

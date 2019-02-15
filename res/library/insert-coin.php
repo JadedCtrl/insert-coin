@@ -14,7 +14,7 @@ function create_page($page_title, $template, $image_alt_text, $image_path)
 	?>
 	<img
 		alt="<?php echo($image_alt_text); ?>"
-		src="<?php echo(root($image_path)); ?>">
+		src="<?php echo(webroot($image_path)); ?>">
 	</main> <?php
 	include(root("res/templates/footer.php"));
 	?></body>

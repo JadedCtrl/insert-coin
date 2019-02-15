@@ -13,7 +13,7 @@ if (!empty($_POST["desired_filename"])) {
 $file_name = sanitize_filename($file_name);
 
 $dest_name = $GLOBALS["file_beam_dir"] . $file_name;
-$dest_file = root("public_html/" . $dest_name);
+$dest_file = root("/" . $dest_name);
 
 
 

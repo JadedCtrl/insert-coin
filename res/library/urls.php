@@ -48,8 +48,7 @@ function make_url($path)
 {
         $url = protocol()
                 . $_SERVER['HTTP_HOST']
-                . "/"
-                . $path;
+                . webroot($path);
 
         return $url;
 }

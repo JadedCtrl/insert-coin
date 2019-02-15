@@ -18,6 +18,13 @@ function root($path)
 	return $absolute_path;
 }
 
+// PATH_RELATIVE_TO_PROJECT_ROOT --> PATH_RELATIVE_TO_WEB_ROOT
+//	Return the absolute path to something within the project's root.
+function webroot($path)
+{
+	return $GLOBALS['webroot'] . $path;
+}
+
 include(root("res/library/array.php"));
 include(root("res/library/file.php"));
 include(root("res/library/insert-coin.php"));

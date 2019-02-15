@@ -11,7 +11,7 @@ $visible_name = $url_alias . $GLOBALS["url_aliasize_visible_suffix"];
 $visible_dest = $GLOBALS["url_aliasize_dir"] . $visible_name;
 $dest_name = $GLOBALS["url_aliasize_dir"] . $url_alias
 		. $GLOBALS["url_aliasize_suffix"];
-$dest_file = root("public_html/" . $dest_name);
+$dest_file = root("/" . $dest_name);
 
 
 switch (true) {

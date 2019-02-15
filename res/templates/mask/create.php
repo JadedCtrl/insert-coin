@@ -1,4 +1,5 @@
-<form action="private/create.php" method="post" enctype="multipart/form-data">
+<form action="<?php echo webroot("private/create.php")?>"
+		method="post" enctype="multipart/form-data">
 	<p>
         	<input type="text" placeholder="URL"
 			name="url_target" class="basic-text">
