@@ -6,8 +6,8 @@
 
 $site_name = "insert-coin";      	// what the site will be called
 
-$root = "/srv/www/htdocs/insert-coin";	// the absolute path of this instance
-$webroot = "/insert-coin/"       	// path of instance relative to
+$root_name = "/srv/www/htdocs/insert-coin";	// the absolute path of this instance
+$webroot = "/insert-coin/";       	// path of instance relative to
 					// web-root (I.E., how it looks in
 					// the URL without the hostname)
 
