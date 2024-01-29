@@ -28,6 +28,6 @@ of Lighttpd, read "docs/lighttpd.txt".
 BORING STUFF
 ----------------------------------------
 License is AGPLv3-- check COPYING.txt.
-Author is Jenga Phoenix <jadedctrl@teknik.io>
-Permanent instance over at https://coinsh.red
-Sauce is at https://git.eunichx.us/insert-coin.git
+Author is Jenga Phoenix <jadedctrl@posteo.at>
+The flagship instance was https://coinsh.red, until it moved to distribute-coin.
+Sauce is at https://hak.xwx.moe/jadedctrl//insert-coin
