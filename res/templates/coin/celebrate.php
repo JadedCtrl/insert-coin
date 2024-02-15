@@ -4,5 +4,5 @@
 
 	<p><b><?php echo($GLOBALS["coin_url"]); ?></b></p>
 
-	<p>It's meta-stuff (or lack thereof) is 
+	<p>Its meta stuff (or lack thereof) is 
 	<a href="<?php echo($GLOBALS["coin_url"] . ".txt"); ?>">here</a></p>
