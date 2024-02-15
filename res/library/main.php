@@ -5,8 +5,8 @@
 //	Return the absolute path to the project's root.
 function get_project_root()
 {
-	return preg_replace("%" . $GLOBALS["root"] . ".*" . "%",
-				$GLOBALS["root"] . "/",
+	return preg_replace("%" . $GLOBALS["root_name"] . ".*" . "%",
+				$GLOBALS["root_name"] . "/",
 				getcwd());
 }
 
