@@ -26,6 +26,11 @@ switch (true) {
 				"coin/death-2.html",
 				$file_beam_die_alt, $file_beam_die_img);
 			break;
+	case ($error == 3):
+		 	create_page($item . " on fire",
+				"coin/death-3.html",
+				$file_beam_die_alt, $file_beam_die_img);
+			break;
 	default:
 			create_page($item . " on fire",
 				"coin/death.html",

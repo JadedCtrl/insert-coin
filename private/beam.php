@@ -39,7 +39,7 @@ switch (true) {
 		break;
 
 	default:
-		redirect(make_url("result/beam.php"));
+		redirect(make_url("result/beam.php?error=3"));
 		break;
 }
 
